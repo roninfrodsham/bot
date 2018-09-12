@@ -16,7 +16,7 @@ const apiAiService = apiai(config.API_AI_CLIENT_ACCESS_TOKEN, {
 const sessionIds = new Map();
 
 app.set('port', process.env.PORT || 5000);
-
+console.log('add port');
 app.use(express.static('public'));
 
 // Process application/x-www-form-urlencoded
