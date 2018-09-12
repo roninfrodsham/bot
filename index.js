@@ -1,9 +1,9 @@
 
-const apiai = require('apiai');
-const express = require('express');
-const bodyParser = require('body-parser');
-const uuid = require('uuid');
-const axios = require('axios');
+const apiai = require('./apiai');
+const express = require('./express');
+const bodyParser = require('./body-parser');
+const uuid = require('./uuid');
+const axios = require('./axios');
 
 const config = require('./config');
 
