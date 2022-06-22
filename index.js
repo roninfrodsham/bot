@@ -188,7 +188,6 @@ const handleApiAiResponse = (sender, response) => {
   console.log('Action: ', action);
   sendTypingOff(sender);
   
-  /*
   if (responseText == "" && !isDefined(action)) {
     //api ai could not evaluate input.
     console.log("Unknown query" + response.result.resolvedQuery);
@@ -207,8 +206,7 @@ const handleApiAiResponse = (sender, response) => {
     }
   } else if (isDefined(responseText)) {
     sendTextMessage(sender, responseText);
-  }*/
-  sendTextMessage(sender, responseText);
+  }
 };
 
 const sendTextMessage = async (recipientId, text) => {
@@ -232,7 +230,7 @@ const handleApiAiAction = (sender, action, responseText, contexts, parameters) =
       break;
     default:
       //unhandled action, just send back the text
-    sendTextMessage(sender, responseText);
+      sendTextMessage(sender, responseText);
   }
 }
 
